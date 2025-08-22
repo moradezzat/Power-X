@@ -24,12 +24,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Head>
-        <meta
-          name="google-site-verification"
-          content="a1FcVANdkoJgNPh7BLNeCNFOxd3Dr07S1pFGLNeQsuA"
-        />
-      </Head>
+      <head>
+        <meta name="google-site-verification" content="a1FcVANdkoJgNPh7BLNeCNFOxd3Dr07S1pFGLNeQsuA" />
+      </head>
       <body className={`${Rubik.variable} antialiased`}>
         {children}
       </body>
