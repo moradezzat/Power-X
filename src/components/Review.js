@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function ReviewCard({ Name, Location, Rate, Message }) {
     const generateStars = (rate) => {
         const fullStars = "⭐".repeat(Math.floor(rate));
@@ -14,7 +16,14 @@ export default function ReviewCard({ Name, Location, Rate, Message }) {
             </div>
             <p className="text-gray-600 mb-6 italic">{Message}</p>
             <div className="flex items-center">
-                <div className="w-12 h-12 bg-gray-300 rounded-full mr-4">{/* pfp */}</div>
+                <div className="w-12 h-12 bg-gray-300 rounded-full mr-4">
+                    <Image 
+                        alt="Profile Picture"
+                        src="/Assets/User.webp"
+                        width={48}
+                        height={48}
+                    />
+                </div>
                 <div>
                   <h4 className="font-semibold text-gray-800">{Name}</h4>
                   <p className="text-sm text-gray-600">{Location}</p>
