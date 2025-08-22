@@ -1,5 +1,6 @@
 import LocalFont from "next/font/local";
 import "./globals.css";
+import Head from "next/head";
 
 const Rubik = LocalFont({
   src: [
@@ -19,9 +20,16 @@ export const metadata = {
   description: "تيم باور اكس للتبريد والتكييف",
 };
 
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <Head>
+        <meta
+          name="google-site-verification"
+          content="a1FcVANdkoJgNPh7BLNeCNFOxd3Dr07S1pFGLNeQsuA"
+        />
+      </Head>
       <body className={`${Rubik.variable} antialiased`}>
         {children}
       </body>
