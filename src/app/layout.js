@@ -1,6 +1,5 @@
 import LocalFont from "next/font/local";
 import "./globals.css";
-import Head from "next/head";
 
 const Rubik = LocalFont({
   src: [
