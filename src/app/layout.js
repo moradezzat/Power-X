@@ -15,7 +15,7 @@ const Rubik = LocalFont({
 });
 
 export const metadata = {
-  title: "تيم باور اكس",
+  title: "تيم باور اكس للتكييف",
   description: "تيم باور اكس للتبريد والتكييف",
 };
 
